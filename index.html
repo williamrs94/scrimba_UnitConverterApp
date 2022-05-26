@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <main id="main">
+        <div id="middleUpPart">
+            <header id="title">Metric/Imperial unit conversion</header>
+
+            <input id="inputNumb" type="number" placeholder="Input number here">
+                <button id="numbBtn" onclick="calculateBtn()">Calculate!</button>
+            </input>
+        </div>
+
+            <!-- um container englobando os 3 tipos de dados (length, vol e mass) -->
+        <section id="metricsInput">
+            <!-- um container filho para Meter Feet -->
+            <div id="lengthMeterFeet"> 
+                <header id="meterFeet">Lenght (Meter/Feet)</header>
+                <span id="meterFeetNumb"></span> <span id="feetMeterNumb"></span>
+            </div>
+            <!-- container filho para Liters Gallons -->
+            <div id="volumeLitersGallons">
+                <header id="litersGallons">Volume (Liters/Gallons</header>
+                <span id="litersGallonsNumb"> </span> <span id="gallonsLitersNumb"> </span>
+            </div>
+            <!-- container filho para Kg Pounds -->
+            <div id="massKilogramsPounds">
+                <header id="kilogramsPounds">Mass (Kilograms/Pounds)</header>
+                <span id="kilogramsPoundsNumb"></span> <span id="poundsKilogramsNumb"></span>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

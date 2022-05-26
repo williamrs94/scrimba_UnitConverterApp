@@ -1,0 +1,127 @@
+html {
+    background: #29293abe; 
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+
+body {
+    text-align: center;
+    color: #FFFFFF;
+    border: #dce6f5 7px solid;
+    border-radius: 10px;
+    font-family: 'Inter';
+    box-sizing: border-box;
+    word-wrap: break-word;
+    min-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 28.75em) {
+    body {
+      justify-content: center;
+      text-align: center;
+      margin: 0 0rem;
+      font-size: 3rem;
+    }
+  }
+
+#middleUpPart {
+    background-image: linear-gradient(
+        340deg,
+        hsl(200deg 78% 40%) 0%,
+        hsl(128deg 89% 45%) 22%,
+        hsl(55deg 100% 50%) 39%,
+        hsl(28deg 91% 47%) 50%,
+        hsl(0deg 82% 44%) 57%,
+        hsl(0deg 58% 65%) 61%,
+        hsl(0deg 17% 89%) 69%,
+        hsl(0deg 28% 40%) 82%,
+        hsl(0deg 70% 6%) 100%
+      );
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    margin: 0 20px;
+}
+
+#inputNumb {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    max-width: fit-content;
+    margin: auto;
+}
+
+#numbBtn {
+  text-align: center;
+  max-width: fit-content;
+  margin: auto;
+  margin-top: 10px;
+  font-weight: bold;
+  background-image: linear-gradient(
+    340deg,
+    rgba(0, 110, 165, 0.541) 0%,
+    rgba(13, 217, 40, 0.438) 22%,
+    rgba(255, 234, 0, 0.486) 39%,
+    rgba(229, 113, 11, 0.397) 50%,
+    rgba(204, 20, 20, 0.459) 57%,
+    rgba(218, 114, 114, 0.479) 61%,
+    rgba(232, 222, 222, 0.432) 69%,
+    rgba(131, 73, 73, 0.425) 82%,
+    rgba(26, 5, 5, 0.507) 100%
+  );
+  color: 1F2937;
+}
+
+#metricsInput {
+    background: #1F2937;
+    font-size: 15px;
+}
+
+#lengthMeterFeet, #volumeLitersGallons, #massKilogramsPounds  {
+    padding: 30px 0;
+}
+
+#meterFeetNumb, #litersGallonsNumb, #kilogramsPoundsNumb {
+    color: #D2D2D2;
+    padding-top: 10px;
+}
+
+
+
